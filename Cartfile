@@ -1,3 +1,4 @@
+github "wannagohome/KakaoSDKCommon"
 github "wannagohome/RxKakaoSDKCommon"
 github "wannagohome/RxKakaoSDKAuth"
 github "wannagohome/KakaoSDKUser"
