@@ -1,5 +1,10 @@
 github "Alamofire/Alamofire" ~> 5.2
+github "RxSwiftCommunity/RxAlamofire" ~> 5.3
+
 github "wannagohome/KakaoSDKCommon"
 github "wannagohome/RxKakaoSDKCommon"
+
+github "wannagohome/KakaoSDKAuth"
 github "wannagohome/RxKakaoSDKAuth"
+
 github "wannagohome/KakaoSDKUser"
