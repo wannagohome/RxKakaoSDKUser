@@ -8,12 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		23DEAC63251C8FA00007E436 /* RxKakaoSDKUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 23DEAC61251C8FA00007E436 /* RxKakaoSDKUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23DEAC6A251C8FD80007E436 /* UserApi+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DEAC69251C8FD80007E436 /* UserApi+Rx.swift */; };
+		23DEAC6F251C92100007E436 /* KakaoSDKUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DEAC6C251C92100007E436 /* KakaoSDKUser.framework */; };
+		23DEAC70251C92100007E436 /* KakaoSDKUser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23DEAC6C251C92100007E436 /* KakaoSDKUser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23DEAC71251C92100007E436 /* RxKakaoSDKAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DEAC6D251C92100007E436 /* RxKakaoSDKAuth.framework */; };
+		23DEAC72251C92100007E436 /* RxKakaoSDKAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23DEAC6D251C92100007E436 /* RxKakaoSDKAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23DEAC73251C92100007E436 /* RxKakaoSDKCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DEAC6E251C92100007E436 /* RxKakaoSDKCommon.framework */; };
+		23DEAC74251C92100007E436 /* RxKakaoSDKCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23DEAC6E251C92100007E436 /* RxKakaoSDKCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23DEAC75251C92100007E436 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23DEAC74251C92100007E436 /* RxKakaoSDKCommon.framework in Embed Frameworks */,
+				23DEAC70251C92100007E436 /* KakaoSDKUser.framework in Embed Frameworks */,
+				23DEAC72251C92100007E436 /* RxKakaoSDKAuth.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		23DEAC5E251C8FA00007E436 /* RxKakaoSDKUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxKakaoSDKUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DEAC61251C8FA00007E436 /* RxKakaoSDKUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxKakaoSDKUser.h; sourceTree = "<group>"; };
 		23DEAC62251C8FA00007E436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23DEAC69251C8FD80007E436 /* UserApi+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserApi+Rx.swift"; sourceTree = "<group>"; };
+		23DEAC6C251C92100007E436 /* KakaoSDKUser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoSDKUser.framework; path = Carthage/Build/iOS/KakaoSDKUser.framework; sourceTree = "<group>"; };
+		23DEAC6D251C92100007E436 /* RxKakaoSDKAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxKakaoSDKAuth.framework; path = Carthage/Build/iOS/RxKakaoSDKAuth.framework; sourceTree = "<group>"; };
+		23DEAC6E251C92100007E436 /* RxKakaoSDKCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxKakaoSDKCommon.framework; path = Carthage/Build/iOS/RxKakaoSDKCommon.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +48,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23DEAC73251C92100007E436 /* RxKakaoSDKCommon.framework in Frameworks */,
+				23DEAC6F251C92100007E436 /* KakaoSDKUser.framework in Frameworks */,
+				23DEAC71251C92100007E436 /* RxKakaoSDKAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +62,7 @@
 			children = (
 				23DEAC60251C8FA00007E436 /* RxKakaoSDKUser */,
 				23DEAC5F251C8FA00007E436 /* Products */,
+				23DEAC6B251C92100007E436 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +77,21 @@
 		23DEAC60251C8FA00007E436 /* RxKakaoSDKUser */ = {
 			isa = PBXGroup;
 			children = (
+				23DEAC69251C8FD80007E436 /* UserApi+Rx.swift */,
 				23DEAC61251C8FA00007E436 /* RxKakaoSDKUser.h */,
 				23DEAC62251C8FA00007E436 /* Info.plist */,
 			);
 			path = RxKakaoSDKUser;
+			sourceTree = "<group>";
+		};
+		23DEAC6B251C92100007E436 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23DEAC6C251C92100007E436 /* KakaoSDKUser.framework */,
+				23DEAC6D251C92100007E436 /* RxKakaoSDKAuth.framework */,
+				23DEAC6E251C92100007E436 /* RxKakaoSDKCommon.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +116,7 @@
 				23DEAC5A251C8FA00007E436 /* Sources */,
 				23DEAC5B251C8FA00007E436 /* Frameworks */,
 				23DEAC5C251C8FA00007E436 /* Resources */,
+				23DEAC75251C92100007E436 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -95,6 +138,7 @@
 				TargetAttributes = {
 					23DEAC5D251C8FA00007E436 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -131,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23DEAC6A251C8FD80007E436 /* UserApi+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -245,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -260,14 +305,20 @@
 		23DEAC67251C8FA00007E436 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YJQB4DVQ35;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxKakaoSDKUser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -276,22 +327,30 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.Roomfriends.RxKakaoSDKUser;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		23DEAC68251C8FA00007E436 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YJQB4DVQ35;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxKakaoSDKUser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,8 +359,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.Roomfriends.RxKakaoSDKUser;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
